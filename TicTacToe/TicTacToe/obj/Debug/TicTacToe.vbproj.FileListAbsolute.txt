@@ -1,0 +1,16 @@
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\bin\Debug\TicTacToe.xml
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.vbproj.AssemblyReference.cache
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.vbproj.SuggestedBindingRedirects.cache
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Resources.resources
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.vbproj.GenerateResource.cache
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.vbproj.CoreCompileInputs.cache
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.xml
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.FormMain.resources
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.UC_Gamescreen.resources
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.UC_Statisticsscreen.resources
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.UC_Welcomescreen.resources
