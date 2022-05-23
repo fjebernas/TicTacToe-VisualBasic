@@ -36,6 +36,7 @@ Partial Class UC_Gamescreen
         'btn00
         '
         Me.btn00.BackColor = System.Drawing.Color.Black
+        Me.btn00.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn00.FlatAppearance.BorderSize = 0
         Me.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn00.Location = New System.Drawing.Point(14, 29)
@@ -47,6 +48,7 @@ Partial Class UC_Gamescreen
         'btn01
         '
         Me.btn01.BackColor = System.Drawing.Color.Black
+        Me.btn01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn01.FlatAppearance.BorderSize = 0
         Me.btn01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn01.Location = New System.Drawing.Point(191, 29)
@@ -58,6 +60,7 @@ Partial Class UC_Gamescreen
         'btn02
         '
         Me.btn02.BackColor = System.Drawing.Color.Black
+        Me.btn02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn02.FlatAppearance.BorderSize = 0
         Me.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn02.Location = New System.Drawing.Point(368, 29)
@@ -69,6 +72,7 @@ Partial Class UC_Gamescreen
         'btn10
         '
         Me.btn10.BackColor = System.Drawing.Color.Black
+        Me.btn10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn10.FlatAppearance.BorderSize = 0
         Me.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn10.Location = New System.Drawing.Point(14, 192)
@@ -80,6 +84,7 @@ Partial Class UC_Gamescreen
         'btn11
         '
         Me.btn11.BackColor = System.Drawing.Color.Black
+        Me.btn11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn11.FlatAppearance.BorderSize = 0
         Me.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn11.Location = New System.Drawing.Point(191, 192)
@@ -91,6 +96,7 @@ Partial Class UC_Gamescreen
         'btn12
         '
         Me.btn12.BackColor = System.Drawing.Color.Black
+        Me.btn12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn12.FlatAppearance.BorderSize = 0
         Me.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn12.Location = New System.Drawing.Point(368, 192)
@@ -102,6 +108,7 @@ Partial Class UC_Gamescreen
         'btn20
         '
         Me.btn20.BackColor = System.Drawing.Color.Black
+        Me.btn20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn20.FlatAppearance.BorderSize = 0
         Me.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn20.Location = New System.Drawing.Point(14, 355)
@@ -113,6 +120,7 @@ Partial Class UC_Gamescreen
         'btn21
         '
         Me.btn21.BackColor = System.Drawing.Color.Black
+        Me.btn21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn21.FlatAppearance.BorderSize = 0
         Me.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn21.Location = New System.Drawing.Point(191, 355)
@@ -124,6 +132,7 @@ Partial Class UC_Gamescreen
         'btn22
         '
         Me.btn22.BackColor = System.Drawing.Color.Black
+        Me.btn22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btn22.FlatAppearance.BorderSize = 0
         Me.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn22.Location = New System.Drawing.Point(368, 355)

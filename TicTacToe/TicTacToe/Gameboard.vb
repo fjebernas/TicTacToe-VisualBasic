@@ -4,6 +4,9 @@
     Private moveCount As Byte
     Private isGameOver As Boolean
 
+    Private ReadOnly pngX As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\RedX.PNG")
+    Private ReadOnly pngO As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\BlueO.PNG")
+
     Public Sub New()
         flag = False
         moveCount = 0
@@ -22,10 +25,10 @@
         If Not isGameOver Then
             If Not flag Then
                 matrix(row, column) = "x"
-                btn.BackColor = Color.Blue
+                btn.BackgroundImage = pngX
             Else
                 matrix(row, column) = "o"
-                btn.BackColor = Color.Green
+                btn.BackgroundImage = pngO
             End If
 
             flag = Not flag
