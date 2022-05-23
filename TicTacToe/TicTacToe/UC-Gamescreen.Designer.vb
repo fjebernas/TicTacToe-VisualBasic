@@ -22,142 +22,142 @@ Partial Class UC_Gamescreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.btn00 = New System.Windows.Forms.Button()
+        Me.btn01 = New System.Windows.Forms.Button()
+        Me.btn02 = New System.Windows.Forms.Button()
+        Me.btn10 = New System.Windows.Forms.Button()
+        Me.btn11 = New System.Windows.Forms.Button()
+        Me.btn12 = New System.Windows.Forms.Button()
+        Me.btn20 = New System.Windows.Forms.Button()
+        Me.btn21 = New System.Windows.Forms.Button()
+        Me.btn22 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btn00
         '
-        Me.Button1.BackColor = System.Drawing.Color.Black
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(14, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(171, 157)
-        Me.Button1.TabIndex = 0
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btn00.BackColor = System.Drawing.Color.Black
+        Me.btn00.FlatAppearance.BorderSize = 0
+        Me.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn00.Location = New System.Drawing.Point(14, 29)
+        Me.btn00.Name = "btn00"
+        Me.btn00.Size = New System.Drawing.Size(171, 157)
+        Me.btn00.TabIndex = 0
+        Me.btn00.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btn01
         '
-        Me.Button2.BackColor = System.Drawing.Color.Black
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(191, 29)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(171, 157)
-        Me.Button2.TabIndex = 0
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn01.BackColor = System.Drawing.Color.Black
+        Me.btn01.FlatAppearance.BorderSize = 0
+        Me.btn01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn01.Location = New System.Drawing.Point(191, 29)
+        Me.btn01.Name = "btn01"
+        Me.btn01.Size = New System.Drawing.Size(171, 157)
+        Me.btn01.TabIndex = 0
+        Me.btn01.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btn02
         '
-        Me.Button3.BackColor = System.Drawing.Color.Black
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(368, 29)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(171, 157)
-        Me.Button3.TabIndex = 0
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btn02.BackColor = System.Drawing.Color.Black
+        Me.btn02.FlatAppearance.BorderSize = 0
+        Me.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn02.Location = New System.Drawing.Point(368, 29)
+        Me.btn02.Name = "btn02"
+        Me.btn02.Size = New System.Drawing.Size(171, 157)
+        Me.btn02.TabIndex = 0
+        Me.btn02.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btn10
         '
-        Me.Button4.BackColor = System.Drawing.Color.Black
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(14, 192)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(171, 157)
-        Me.Button4.TabIndex = 0
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btn10.BackColor = System.Drawing.Color.Black
+        Me.btn10.FlatAppearance.BorderSize = 0
+        Me.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn10.Location = New System.Drawing.Point(14, 192)
+        Me.btn10.Name = "btn10"
+        Me.btn10.Size = New System.Drawing.Size(171, 157)
+        Me.btn10.TabIndex = 0
+        Me.btn10.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btn11
         '
-        Me.Button5.BackColor = System.Drawing.Color.Black
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(191, 192)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(171, 157)
-        Me.Button5.TabIndex = 0
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btn11.BackColor = System.Drawing.Color.Black
+        Me.btn11.FlatAppearance.BorderSize = 0
+        Me.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn11.Location = New System.Drawing.Point(191, 192)
+        Me.btn11.Name = "btn11"
+        Me.btn11.Size = New System.Drawing.Size(171, 157)
+        Me.btn11.TabIndex = 0
+        Me.btn11.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btn12
         '
-        Me.Button6.BackColor = System.Drawing.Color.Black
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(368, 192)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(171, 157)
-        Me.Button6.TabIndex = 0
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btn12.BackColor = System.Drawing.Color.Black
+        Me.btn12.FlatAppearance.BorderSize = 0
+        Me.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn12.Location = New System.Drawing.Point(368, 192)
+        Me.btn12.Name = "btn12"
+        Me.btn12.Size = New System.Drawing.Size(171, 157)
+        Me.btn12.TabIndex = 0
+        Me.btn12.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btn20
         '
-        Me.Button7.BackColor = System.Drawing.Color.Black
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(14, 355)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(171, 157)
-        Me.Button7.TabIndex = 0
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btn20.BackColor = System.Drawing.Color.Black
+        Me.btn20.FlatAppearance.BorderSize = 0
+        Me.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn20.Location = New System.Drawing.Point(14, 355)
+        Me.btn20.Name = "btn20"
+        Me.btn20.Size = New System.Drawing.Size(171, 157)
+        Me.btn20.TabIndex = 0
+        Me.btn20.UseVisualStyleBackColor = False
         '
-        'Button8
+        'btn21
         '
-        Me.Button8.BackColor = System.Drawing.Color.Black
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(191, 355)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(171, 157)
-        Me.Button8.TabIndex = 0
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btn21.BackColor = System.Drawing.Color.Black
+        Me.btn21.FlatAppearance.BorderSize = 0
+        Me.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn21.Location = New System.Drawing.Point(191, 355)
+        Me.btn21.Name = "btn21"
+        Me.btn21.Size = New System.Drawing.Size(171, 157)
+        Me.btn21.TabIndex = 0
+        Me.btn21.UseVisualStyleBackColor = False
         '
-        'Button9
+        'btn22
         '
-        Me.Button9.BackColor = System.Drawing.Color.Black
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Location = New System.Drawing.Point(368, 355)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(171, 157)
-        Me.Button9.TabIndex = 0
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.btn22.BackColor = System.Drawing.Color.Black
+        Me.btn22.FlatAppearance.BorderSize = 0
+        Me.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn22.Location = New System.Drawing.Point(368, 355)
+        Me.btn22.Name = "btn22"
+        Me.btn22.Size = New System.Drawing.Size(171, 157)
+        Me.btn22.TabIndex = 0
+        Me.btn22.UseVisualStyleBackColor = False
         '
         'UC_Gamescreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn22)
+        Me.Controls.Add(Me.btn21)
+        Me.Controls.Add(Me.btn12)
+        Me.Controls.Add(Me.btn11)
+        Me.Controls.Add(Me.btn20)
+        Me.Controls.Add(Me.btn02)
+        Me.Controls.Add(Me.btn10)
+        Me.Controls.Add(Me.btn01)
+        Me.Controls.Add(Me.btn00)
         Me.Name = "UC_Gamescreen"
         Me.Size = New System.Drawing.Size(555, 555)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
+    Friend WithEvents btn00 As Button
+    Friend WithEvents btn01 As Button
+    Friend WithEvents btn02 As Button
+    Friend WithEvents btn10 As Button
+    Friend WithEvents btn11 As Button
+    Friend WithEvents btn12 As Button
+    Friend WithEvents btn20 As Button
+    Friend WithEvents btn21 As Button
+    Friend WithEvents btn22 As Button
 End Class

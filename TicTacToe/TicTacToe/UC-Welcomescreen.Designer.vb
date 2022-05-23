@@ -51,10 +51,12 @@ Partial Class UC_Welcomescreen
         '
         'btnPlay
         '
-        Me.btnPlay.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnPlay.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnPlay.FlatAppearance.BorderSize = 0
+        Me.btnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
         Me.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPlay.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPlay.ForeColor = System.Drawing.Color.White
         Me.btnPlay.Location = New System.Drawing.Point(202, 304)
         Me.btnPlay.Name = "btnPlay"
         Me.btnPlay.Size = New System.Drawing.Size(145, 43)
@@ -64,10 +66,12 @@ Partial Class UC_Welcomescreen
         '
         'btnStatistics
         '
-        Me.btnStatistics.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnStatistics.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnStatistics.FlatAppearance.BorderSize = 0
+        Me.btnStatistics.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
         Me.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStatistics.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatistics.ForeColor = System.Drawing.Color.White
         Me.btnStatistics.Location = New System.Drawing.Point(202, 353)
         Me.btnStatistics.Name = "btnStatistics"
         Me.btnStatistics.Size = New System.Drawing.Size(145, 43)
@@ -77,10 +81,12 @@ Partial Class UC_Welcomescreen
         '
         'btnQuit
         '
-        Me.btnQuit.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.btnQuit.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnQuit.FlatAppearance.BorderSize = 0
+        Me.btnQuit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
         Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.ForeColor = System.Drawing.Color.White
         Me.btnQuit.Location = New System.Drawing.Point(202, 402)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(145, 43)

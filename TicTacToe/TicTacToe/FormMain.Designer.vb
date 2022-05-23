@@ -30,18 +30,21 @@ Partial Class FormMain
         '
         'btnWelcomescreen
         '
+        Me.btnWelcomescreen.BackColor = System.Drawing.Color.Green
         Me.btnWelcomescreen.FlatAppearance.BorderSize = 0
         Me.btnWelcomescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWelcomescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWelcomescreen.ForeColor = System.Drawing.Color.White
         Me.btnWelcomescreen.Location = New System.Drawing.Point(13, 13)
         Me.btnWelcomescreen.Name = "btnWelcomescreen"
         Me.btnWelcomescreen.Size = New System.Drawing.Size(181, 41)
         Me.btnWelcomescreen.TabIndex = 0
         Me.btnWelcomescreen.Text = "Welcome"
-        Me.btnWelcomescreen.UseVisualStyleBackColor = True
+        Me.btnWelcomescreen.UseVisualStyleBackColor = False
         '
         'btnGamescreen
         '
+        Me.btnGamescreen.BackColor = System.Drawing.Color.White
         Me.btnGamescreen.FlatAppearance.BorderSize = 0
         Me.btnGamescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGamescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -50,10 +53,11 @@ Partial Class FormMain
         Me.btnGamescreen.Size = New System.Drawing.Size(181, 41)
         Me.btnGamescreen.TabIndex = 0
         Me.btnGamescreen.Text = "Play"
-        Me.btnGamescreen.UseVisualStyleBackColor = True
+        Me.btnGamescreen.UseVisualStyleBackColor = False
         '
         'btnStatisticsscreen
         '
+        Me.btnStatisticsscreen.BackColor = System.Drawing.Color.White
         Me.btnStatisticsscreen.FlatAppearance.BorderSize = 0
         Me.btnStatisticsscreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStatisticsscreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -62,7 +66,7 @@ Partial Class FormMain
         Me.btnStatisticsscreen.Size = New System.Drawing.Size(181, 41)
         Me.btnStatisticsscreen.TabIndex = 0
         Me.btnStatisticsscreen.Text = "Statistics"
-        Me.btnStatisticsscreen.UseVisualStyleBackColor = True
+        Me.btnStatisticsscreen.UseVisualStyleBackColor = False
         '
         'panelContent
         '
@@ -75,6 +79,7 @@ Partial Class FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(579, 632)
         Me.Controls.Add(Me.panelContent)
         Me.Controls.Add(Me.btnStatisticsscreen)
