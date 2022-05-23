@@ -96,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Toolbox.vb" />
     <Compile Include="UC-Gamescreen.Designer.vb">
       <DependentUpon>UC-Gamescreen.vb</DependentUpon>
     </Compile>

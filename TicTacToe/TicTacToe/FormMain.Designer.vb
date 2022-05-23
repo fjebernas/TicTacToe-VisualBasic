@@ -30,11 +30,11 @@ Partial Class FormMain
         '
         'btnWelcomescreen
         '
-        Me.btnWelcomescreen.BackColor = System.Drawing.Color.Green
+        Me.btnWelcomescreen.BackColor = System.Drawing.Color.White
         Me.btnWelcomescreen.FlatAppearance.BorderSize = 0
         Me.btnWelcomescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWelcomescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWelcomescreen.ForeColor = System.Drawing.Color.White
+        Me.btnWelcomescreen.ForeColor = System.Drawing.Color.Black
         Me.btnWelcomescreen.Location = New System.Drawing.Point(13, 13)
         Me.btnWelcomescreen.Name = "btnWelcomescreen"
         Me.btnWelcomescreen.Size = New System.Drawing.Size(181, 41)
