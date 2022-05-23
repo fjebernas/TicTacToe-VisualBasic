@@ -19,19 +19,21 @@
     End Sub
 
     Public Sub Move(ByVal row As Byte, ByVal column As Byte, ByVal btn As Button)
-        If Not flag Then
-            matrix(row, column) = "x"
-            btn.BackColor = Color.Blue
-        Else
-            matrix(row, column) = "o"
-            btn.BackColor = Color.Green
+        If Not isGameOver Then
+            If Not flag Then
+                matrix(row, column) = "x"
+                btn.BackColor = Color.Blue
+            Else
+                matrix(row, column) = "o"
+                btn.BackColor = Color.Green
+            End If
+
+            flag = Not flag
+            btn.Enabled = False
+            moveCount += 1
+
+            CheckStatus()
         End If
-
-        flag = Not flag
-        btn.Enabled = False
-        moveCount += 1
-
-        CheckStatus()
     End Sub
 
     Private Sub CheckStatus()
