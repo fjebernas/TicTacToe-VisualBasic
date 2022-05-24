@@ -37,7 +37,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn00.BackColor = System.Drawing.Color.Black
         Me.btn00.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn00.FlatAppearance.BorderSize = 0
+        Me.btn00.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn00.FlatAppearance.BorderSize = 2
+        Me.btn00.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn00.Location = New System.Drawing.Point(14, 29)
         Me.btn00.Name = "btn00"
@@ -49,7 +51,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn01.BackColor = System.Drawing.Color.Black
         Me.btn01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn01.FlatAppearance.BorderSize = 0
+        Me.btn01.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn01.FlatAppearance.BorderSize = 2
+        Me.btn01.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn01.Location = New System.Drawing.Point(191, 29)
         Me.btn01.Name = "btn01"
@@ -61,7 +65,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn02.BackColor = System.Drawing.Color.Black
         Me.btn02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn02.FlatAppearance.BorderSize = 0
+        Me.btn02.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn02.FlatAppearance.BorderSize = 2
+        Me.btn02.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn02.Location = New System.Drawing.Point(368, 29)
         Me.btn02.Name = "btn02"
@@ -73,7 +79,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn10.BackColor = System.Drawing.Color.Black
         Me.btn10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn10.FlatAppearance.BorderSize = 0
+        Me.btn10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn10.FlatAppearance.BorderSize = 2
+        Me.btn10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn10.Location = New System.Drawing.Point(14, 192)
         Me.btn10.Name = "btn10"
@@ -85,7 +93,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn11.BackColor = System.Drawing.Color.Black
         Me.btn11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn11.FlatAppearance.BorderSize = 0
+        Me.btn11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn11.FlatAppearance.BorderSize = 2
+        Me.btn11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn11.Location = New System.Drawing.Point(191, 192)
         Me.btn11.Name = "btn11"
@@ -97,7 +107,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn12.BackColor = System.Drawing.Color.Black
         Me.btn12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn12.FlatAppearance.BorderSize = 0
+        Me.btn12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn12.FlatAppearance.BorderSize = 2
+        Me.btn12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn12.Location = New System.Drawing.Point(368, 192)
         Me.btn12.Name = "btn12"
@@ -109,7 +121,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn20.BackColor = System.Drawing.Color.Black
         Me.btn20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn20.FlatAppearance.BorderSize = 0
+        Me.btn20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn20.FlatAppearance.BorderSize = 2
+        Me.btn20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn20.Location = New System.Drawing.Point(14, 355)
         Me.btn20.Name = "btn20"
@@ -121,7 +135,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn21.BackColor = System.Drawing.Color.Black
         Me.btn21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn21.FlatAppearance.BorderSize = 0
+        Me.btn21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn21.FlatAppearance.BorderSize = 2
+        Me.btn21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn21.Location = New System.Drawing.Point(191, 355)
         Me.btn21.Name = "btn21"
@@ -133,7 +149,9 @@ Partial Class UC_Gamescreen
         '
         Me.btn22.BackColor = System.Drawing.Color.Black
         Me.btn22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btn22.FlatAppearance.BorderSize = 0
+        Me.btn22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn22.FlatAppearance.BorderSize = 2
+        Me.btn22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn22.Location = New System.Drawing.Point(368, 355)
         Me.btn22.Name = "btn22"

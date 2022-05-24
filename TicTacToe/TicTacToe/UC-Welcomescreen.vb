@@ -8,6 +8,7 @@
         ' Add any initialization after the InitializeComponent() call.
         mainForm = passedForm
     End Sub
+
     Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         Toolbox.CreateInstance(New UC_Gamescreen, mainForm)
     End Sub

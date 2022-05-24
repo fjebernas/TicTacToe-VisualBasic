@@ -30,11 +30,11 @@ Partial Class FormMain
         '
         'btnWelcomescreen
         '
-        Me.btnWelcomescreen.BackColor = System.Drawing.Color.White
+        Me.btnWelcomescreen.BackColor = System.Drawing.Color.Black
         Me.btnWelcomescreen.FlatAppearance.BorderSize = 0
         Me.btnWelcomescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWelcomescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWelcomescreen.ForeColor = System.Drawing.Color.Black
+        Me.btnWelcomescreen.ForeColor = System.Drawing.Color.Blue
         Me.btnWelcomescreen.Location = New System.Drawing.Point(13, 13)
         Me.btnWelcomescreen.Name = "btnWelcomescreen"
         Me.btnWelcomescreen.Size = New System.Drawing.Size(181, 41)
@@ -44,10 +44,11 @@ Partial Class FormMain
         '
         'btnGamescreen
         '
-        Me.btnGamescreen.BackColor = System.Drawing.Color.White
+        Me.btnGamescreen.BackColor = System.Drawing.Color.Black
         Me.btnGamescreen.FlatAppearance.BorderSize = 0
         Me.btnGamescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGamescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGamescreen.ForeColor = System.Drawing.Color.Lime
         Me.btnGamescreen.Location = New System.Drawing.Point(200, 13)
         Me.btnGamescreen.Name = "btnGamescreen"
         Me.btnGamescreen.Size = New System.Drawing.Size(181, 41)
@@ -57,10 +58,11 @@ Partial Class FormMain
         '
         'btnStatisticsscreen
         '
-        Me.btnStatisticsscreen.BackColor = System.Drawing.Color.White
+        Me.btnStatisticsscreen.BackColor = System.Drawing.Color.Black
         Me.btnStatisticsscreen.FlatAppearance.BorderSize = 0
         Me.btnStatisticsscreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStatisticsscreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatisticsscreen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnStatisticsscreen.Location = New System.Drawing.Point(387, 13)
         Me.btnStatisticsscreen.Name = "btnStatisticsscreen"
         Me.btnStatisticsscreen.Size = New System.Drawing.Size(181, 41)
@@ -79,12 +81,14 @@ Partial Class FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightGray
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(579, 632)
         Me.Controls.Add(Me.panelContent)
         Me.Controls.Add(Me.btnStatisticsscreen)
         Me.Controls.Add(Me.btnGamescreen)
         Me.Controls.Add(Me.btnWelcomescreen)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "FormMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TicTacToe using VisualBasic"

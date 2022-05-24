@@ -22,7 +22,7 @@ Partial Class UC_Statisticsscreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblStatisticsheader = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -30,21 +30,23 @@ Partial Class UC_Statisticsscreen
         Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblStatisticsheader
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Consolas", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(133, 91)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(303, 41)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Game Statistics"
+        Me.lblStatisticsheader.AutoSize = True
+        Me.lblStatisticsheader.Font = New System.Drawing.Font("Consolas", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatisticsheader.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblStatisticsheader.Location = New System.Drawing.Point(133, 91)
+        Me.lblStatisticsheader.Name = "lblStatisticsheader"
+        Me.lblStatisticsheader.Size = New System.Drawing.Size(303, 41)
+        Me.lblStatisticsheader.TabIndex = 1
+        Me.lblStatisticsheader.Text = "Game Statistics"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 182)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(70, 205)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(428, 28)
         Me.Label2.TabIndex = 1
@@ -54,7 +56,8 @@ Partial Class UC_Statisticsscreen
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(70, 224)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(70, 247)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(428, 28)
         Me.Label3.TabIndex = 1
@@ -64,7 +67,8 @@ Partial Class UC_Statisticsscreen
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(70, 266)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(70, 289)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(428, 28)
         Me.Label4.TabIndex = 1
@@ -74,7 +78,8 @@ Partial Class UC_Statisticsscreen
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(70, 308)
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(70, 331)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(428, 28)
         Me.Label5.TabIndex = 1
@@ -84,7 +89,8 @@ Partial Class UC_Statisticsscreen
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(70, 350)
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(70, 373)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(428, 28)
         Me.Label6.TabIndex = 1
@@ -99,7 +105,7 @@ Partial Class UC_Statisticsscreen
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblStatisticsheader)
         Me.Name = "UC_Statisticsscreen"
         Me.Size = New System.Drawing.Size(555, 555)
         Me.ResumeLayout(False)
@@ -107,7 +113,7 @@ Partial Class UC_Statisticsscreen
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblStatisticsheader As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
