@@ -11,7 +11,9 @@
     Public Shared scoreO As Byte = 0
     Public Shared scoreDraws As Byte = 0
 
-    Public Sub New()
+    Private header As Label
+
+    Public Sub New(ByVal headerFromFormmain As Label)
         flag = False
         moveCount = 0
         matrix(0, 0) = "."
@@ -23,6 +25,9 @@
         matrix(2, 0) = "."
         matrix(2, 1) = "."
         matrix(2, 2) = "."
+
+        header = headerFromFormmain
+        header.ForeColor = Color.Yellow
     End Sub
 
     Public Sub Move(ByVal row As Byte, ByVal column As Byte, ByVal btn As Button)
@@ -30,9 +35,13 @@
             If Not flag Then
                 matrix(row, column) = "x"
                 btn.BackgroundImage = pngX
+                'header.ForeColor = Color.Blue
+                header.Text = "Your turn O!"
             Else
                 matrix(row, column) = "o"
                 btn.BackgroundImage = pngO
+                'header.ForeColor = Color.Red
+                header.Text = "Your turn X!"
             End If
 
             flag = Not flag
@@ -53,7 +62,9 @@
             matrix(0, 2) = "x" And matrix(1, 2) = "x" And matrix(2, 2) = "x" Or
             matrix(0, 0) = "x" And matrix(1, 1) = "x" And matrix(2, 2) = "x" Or
             matrix(0, 2) = "x" And matrix(1, 1) = "x" And matrix(2, 0) = "x" Then
-            MessageBox.Show("X wins!")
+            'header.ForeColor = Color.Red
+            header.Text = "   X WINS!"
+            Blink()
             scoreX += 1
             isGameOver = True
             'check horizontals, verticals and diagonals for o
@@ -65,13 +76,28 @@
             matrix(0, 2) = "o" And matrix(1, 2) = "o" And matrix(2, 2) = "o" Or
             matrix(0, 0) = "o" And matrix(1, 1) = "o" And matrix(2, 2) = "o" Or
             matrix(0, 2) = "o" And matrix(1, 1) = "o" And matrix(2, 0) = "o" Then
-            MessageBox.Show("O wins!")
+            'header.ForeColor = Color.Blue
+            header.Text = "   O WINS!"
+            Blink()
             scoreO += 1
             isGameOver = True
         ElseIf moveCount = 9 Then
-            MessageBox.Show("Draw!")
+            'header.ForeColor = Color.Green
+            header.Text = "   DRAW!"
+            Blink()
             scoreDraws += 1
             isGameOver = True
         End If
+    End Sub
+
+    Private Async Sub Blink()
+        While True
+            Await Task.Delay(300)
+            If header.ForeColor = Color.Yellow Then
+                header.ForeColor = Color.Black
+            ElseIf header.ForeColor = Color.Black Then
+                header.ForeColor = Color.Yellow
+            End If
+        End While
     End Sub
 End Class

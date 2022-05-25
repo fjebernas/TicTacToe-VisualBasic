@@ -6,7 +6,7 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        gameboard = New Gameboard
+        gameboard = New Gameboard(lblGamescreenHeader)
     End Sub
 
 #Region "First Row"

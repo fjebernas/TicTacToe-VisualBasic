@@ -23,9 +23,9 @@ Partial Class UC_Statisticsscreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblStatisticsheader = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblPlayerX = New System.Windows.Forms.Label()
+        Me.lblPlayerO = New System.Windows.Forms.Label()
+        Me.lblDraws = New System.Windows.Forms.Label()
         Me.lblScoreX = New System.Windows.Forms.Label()
         Me.lblScoreO = New System.Windows.Forms.Label()
         Me.lblScoreDraws = New System.Windows.Forms.Label()
@@ -42,38 +42,38 @@ Partial Class UC_Statisticsscreen
         Me.lblStatisticsheader.TabIndex = 1
         Me.lblStatisticsheader.Text = "Game Statistics"
         '
-        'Label2
+        'lblPlayerX
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(48, 205)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(428, 28)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Player X........................"
+        Me.lblPlayerX.AutoSize = True
+        Me.lblPlayerX.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerX.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPlayerX.Location = New System.Drawing.Point(48, 205)
+        Me.lblPlayerX.Name = "lblPlayerX"
+        Me.lblPlayerX.Size = New System.Drawing.Size(428, 28)
+        Me.lblPlayerX.TabIndex = 1
+        Me.lblPlayerX.Text = "Player X........................"
         '
-        'Label3
+        'lblPlayerO
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(48, 260)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(428, 28)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Player O........................"
+        Me.lblPlayerO.AutoSize = True
+        Me.lblPlayerO.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerO.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblPlayerO.Location = New System.Drawing.Point(48, 260)
+        Me.lblPlayerO.Name = "lblPlayerO"
+        Me.lblPlayerO.Size = New System.Drawing.Size(428, 28)
+        Me.lblPlayerO.TabIndex = 1
+        Me.lblPlayerO.Text = "Player O........................"
         '
-        'Label1
+        'lblDraws
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Green
-        Me.Label1.Location = New System.Drawing.Point(48, 315)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(428, 28)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Draws..........................."
+        Me.lblDraws.AutoSize = True
+        Me.lblDraws.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDraws.ForeColor = System.Drawing.Color.Green
+        Me.lblDraws.Location = New System.Drawing.Point(48, 315)
+        Me.lblDraws.Name = "lblDraws"
+        Me.lblDraws.Size = New System.Drawing.Size(428, 28)
+        Me.lblDraws.TabIndex = 1
+        Me.lblDraws.Text = "Draws..........................."
         '
         'lblScoreX
         '
@@ -115,9 +115,9 @@ Partial Class UC_Statisticsscreen
         Me.Controls.Add(Me.lblScoreDraws)
         Me.Controls.Add(Me.lblScoreO)
         Me.Controls.Add(Me.lblScoreX)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblDraws)
+        Me.Controls.Add(Me.lblPlayerO)
+        Me.Controls.Add(Me.lblPlayerX)
         Me.Controls.Add(Me.lblStatisticsheader)
         Me.Name = "UC_Statisticsscreen"
         Me.Size = New System.Drawing.Size(555, 555)
@@ -127,9 +127,9 @@ Partial Class UC_Statisticsscreen
     End Sub
 
     Friend WithEvents lblStatisticsheader As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblPlayerX As Label
+    Friend WithEvents lblPlayerO As Label
+    Friend WithEvents lblDraws As Label
     Friend WithEvents lblScoreX As Label
     Friend WithEvents lblScoreO As Label
     Friend WithEvents lblScoreDraws As Label
