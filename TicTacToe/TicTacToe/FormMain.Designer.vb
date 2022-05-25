@@ -32,6 +32,7 @@ Partial Class FormMain
         '
         Me.btnWelcomescreen.BackColor = System.Drawing.Color.Black
         Me.btnWelcomescreen.FlatAppearance.BorderSize = 0
+        Me.btnWelcomescreen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
         Me.btnWelcomescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWelcomescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWelcomescreen.ForeColor = System.Drawing.Color.Blue
@@ -46,6 +47,7 @@ Partial Class FormMain
         '
         Me.btnGamescreen.BackColor = System.Drawing.Color.Black
         Me.btnGamescreen.FlatAppearance.BorderSize = 0
+        Me.btnGamescreen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
         Me.btnGamescreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGamescreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGamescreen.ForeColor = System.Drawing.Color.Lime
@@ -60,6 +62,7 @@ Partial Class FormMain
         '
         Me.btnStatisticsscreen.BackColor = System.Drawing.Color.Black
         Me.btnStatisticsscreen.FlatAppearance.BorderSize = 0
+        Me.btnStatisticsscreen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
         Me.btnStatisticsscreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStatisticsscreen.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStatisticsscreen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))

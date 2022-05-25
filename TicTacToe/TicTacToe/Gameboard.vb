@@ -7,6 +7,10 @@
     Private ReadOnly pngX As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\RedX.PNG")
     Private ReadOnly pngO As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\BlueO.PNG")
 
+    Public Shared scoreX As Byte = 0
+    Public Shared scoreO As Byte = 0
+    Public Shared scoreDraws As Byte = 0
+
     Public Sub New()
         flag = False
         moveCount = 0
@@ -50,6 +54,7 @@
             matrix(0, 0) = "x" And matrix(1, 1) = "x" And matrix(2, 2) = "x" Or
             matrix(0, 2) = "x" And matrix(1, 1) = "x" And matrix(2, 0) = "x" Then
             MessageBox.Show("X wins!")
+            scoreX += 1
             isGameOver = True
             'check horizontals, verticals and diagonals for o
         ElseIf matrix(0, 0) = "o" And matrix(0, 1) = "o" And matrix(0, 2) = "o" Or
@@ -61,9 +66,11 @@
             matrix(0, 0) = "o" And matrix(1, 1) = "o" And matrix(2, 2) = "o" Or
             matrix(0, 2) = "o" And matrix(1, 1) = "o" And matrix(2, 0) = "o" Then
             MessageBox.Show("O wins!")
+            scoreO += 1
             isGameOver = True
         ElseIf moveCount = 9 Then
             MessageBox.Show("Draw!")
+            scoreDraws += 1
             isGameOver = True
         End If
     End Sub

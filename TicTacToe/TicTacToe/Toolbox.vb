@@ -1,5 +1,5 @@
-﻿NotInheritable Class Toolbox
-    Public Shared Function CreateInstance(ByVal userControl As Control, form As FormMain) As Integer
+﻿Module Toolbox
+    Public Function CreateInstance(ByVal userControl As Control, form As FormMain) As Integer
         For Each item As Control In form.panelContent.Controls
             item.Dispose()
         Next
@@ -9,4 +9,4 @@
 
         Return 0
     End Function
-End Class
+End Module
