@@ -96,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Square.vb" />
     <Compile Include="Toolbox.vb" />
     <Compile Include="UC-Gamescreen.Designer.vb">
       <DependentUpon>UC-Gamescreen.vb</DependentUpon>
@@ -119,6 +120,7 @@
   <ItemGroup>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
