@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arbiter.vb" />
     <Compile Include="FormMain.vb">
       <SubType>Form</SubType>
     </Compile>

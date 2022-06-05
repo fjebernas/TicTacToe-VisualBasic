@@ -1,4 +1,6 @@
-﻿Public Class Square
+﻿'Square class represents a single square in the 3x3 tictactoe Gameboard
+'   can be marked as either X or O
+Public Class Square
     Private ReadOnly pngX As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\RedX.PNG")
     Private ReadOnly pngO As Bitmap = New Bitmap("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\BlueO.PNG")
 
