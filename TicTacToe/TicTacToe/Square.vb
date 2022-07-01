@@ -16,6 +16,10 @@ Public Class Square
         isO = False
     End Sub
 
+    Public Sub GetState()
+
+    End Sub
+
     Public Sub Trigger(ByVal isXTurn As Boolean, ByVal passedBtn As Button)
         btn = passedBtn
 
