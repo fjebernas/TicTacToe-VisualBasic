@@ -53,7 +53,7 @@ Public Class CPU
         'check for rows
         If _tempTargetSquare Is Nothing Then
             For i = 0 To _squareMatrix.GetLength(0) - 1
-                _tempTargetSquare = SearchAndStore(_squareMatrix(i, 0), _squareMatrix(i, 1), _squareMatrix(i, 2), True)
+                _tempTargetSquare = SearchAndStore(_squareMatrix(i, 0), _squareMatrix(i, 1), _squareMatrix(i, 2), False)
                 If Not (_tempTargetSquare Is Nothing) Then
                     Exit For
                 End If
@@ -63,7 +63,7 @@ Public Class CPU
         'if still empty, check for columns
         If _tempTargetSquare Is Nothing Then
             For i = 0 To _squareMatrix.GetLength(1) - 1
-                _tempTargetSquare = SearchAndStore(_squareMatrix(0, i), _squareMatrix(1, i), _squareMatrix(2, i), True)
+                _tempTargetSquare = SearchAndStore(_squareMatrix(0, i), _squareMatrix(1, i), _squareMatrix(2, i), False)
                 If Not (_tempTargetSquare Is Nothing) Then
                     Exit For
                 End If
@@ -72,10 +72,10 @@ Public Class CPU
 
         'if still empty, check for diagonals
         If _tempTargetSquare Is Nothing Then
-            _tempTargetSquare = SearchAndStore(_squareMatrix(0, 0), _squareMatrix(1, 1), _squareMatrix(2, 2), True)
+            _tempTargetSquare = SearchAndStore(_squareMatrix(0, 0), _squareMatrix(1, 1), _squareMatrix(2, 2), False)
         End If
         If _tempTargetSquare Is Nothing Then
-            _tempTargetSquare = SearchAndStore(_squareMatrix(0, 2), _squareMatrix(1, 1), _squareMatrix(2, 0), True)
+            _tempTargetSquare = SearchAndStore(_squareMatrix(0, 2), _squareMatrix(1, 1), _squareMatrix(2, 0), False)
         End If
 
         'if still empty, do random move
@@ -90,8 +90,6 @@ Public Class CPU
 
         _tempTargetSquare.Trigger(_playerSign)
         _moveCount += 1
-        MessageBox.Show(_squareMatrix.GetLength(0))
-        MessageBox.Show(_squareMatrix.GetLength(1))
     End Sub
 
     Public Function SearchAndStore(ByVal sq1 As Square, ByVal sq2 As Square, ByVal sq3 As Square, ByVal attackMode As Boolean) As Square
