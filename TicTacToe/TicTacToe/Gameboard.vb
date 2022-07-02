@@ -7,7 +7,7 @@
 Public Class Gameboard
     Private _isGameOver As Boolean
     Private _isXTurn As Boolean
-    Private _squareMatrix(3, 3) As Square
+    Private _squareMatrix(2, 2) As Square
 
     Private _playerX As Player
     Private _playerO As Player
@@ -17,9 +17,12 @@ Public Class Gameboard
     Public Sub New(ByVal btnArray(,) As Button, ByVal isBattlingCPU As Boolean)
         _isGameOver = False
         _isXTurn = True
-        For i = 0 To _squareMatrix.GetLength(0) - 1
-            For j = 0 To _squareMatrix.GetLength(1) - 1
+
+        For i As Byte = 0 To _squareMatrix.GetLength(0) - 1
+            For j As Byte = 0 To _squareMatrix.GetLength(1) - 1
                 _squareMatrix(i, j) = New Square(btnArray(i, j))
+                '_squareMatrix(i, j) = New Square(New Button)
+                'MessageBox.Show("i is: " & i & vbCrLf & "j is: " & j)
             Next
         Next
 

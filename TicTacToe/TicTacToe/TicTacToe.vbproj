@@ -73,7 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arbiter.vb" />
+    <Compile Include="CPU.vb" />
     <Compile Include="FormMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +97,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Player.vb" />
     <Compile Include="Square.vb" />
     <Compile Include="Toolbox.vb" />
     <Compile Include="UC-Gamescreen.Designer.vb">

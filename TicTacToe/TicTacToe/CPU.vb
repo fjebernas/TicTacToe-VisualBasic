@@ -52,7 +52,7 @@ Public Class CPU
 #Region "NORMAL MOVE"
         'check for rows
         If _tempTargetSquare Is Nothing Then
-            For i = 0 To _squareMatrix.GetLength(0)
+            For i = 0 To _squareMatrix.GetLength(0) - 1
                 _tempTargetSquare = SearchAndStore(_squareMatrix(i, 0), _squareMatrix(i, 1), _squareMatrix(i, 2), True)
                 If Not (_tempTargetSquare Is Nothing) Then
                     Exit For
@@ -62,7 +62,7 @@ Public Class CPU
 
         'if still empty, check for columns
         If _tempTargetSquare Is Nothing Then
-            For i = 0 To _squareMatrix.GetLength(1)
+            For i = 0 To _squareMatrix.GetLength(1) - 1
                 _tempTargetSquare = SearchAndStore(_squareMatrix(0, i), _squareMatrix(1, i), _squareMatrix(2, i), True)
                 If Not (_tempTargetSquare Is Nothing) Then
                     Exit For
@@ -90,6 +90,8 @@ Public Class CPU
 
         _tempTargetSquare.Trigger(_playerSign)
         _moveCount += 1
+        MessageBox.Show(_squareMatrix.GetLength(0))
+        MessageBox.Show(_squareMatrix.GetLength(1))
     End Sub
 
     Public Function SearchAndStore(ByVal sq1 As Square, ByVal sq2 As Square, ByVal sq3 As Square, ByVal attackMode As Boolean) As Square
@@ -162,7 +164,7 @@ Public Class CPU
         Return False
     End Function
 
-    Private Function CheckRowColDiag(ByVal sq1 As Square, ByVal sq2 As Square, ByVal sq3 As Square)
+    Private Function CheckRowColDiag(ByVal sq1 As Square, ByVal sq2 As Square, ByVal sq3 As Square) As Boolean
         If Not (sq1.GetState() = " ") And sq1.GetState() = sq2.GetState() And sq2.GetState() = sq3.GetState() Then
             Return True
         End If
