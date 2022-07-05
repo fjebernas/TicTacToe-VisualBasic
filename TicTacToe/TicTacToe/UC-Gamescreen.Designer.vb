@@ -43,10 +43,14 @@ Partial Class UC_Gamescreen
         Me.btn00.FlatAppearance.BorderSize = 2
         Me.btn00.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn00.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn00.Location = New System.Drawing.Point(14, 56)
         Me.btn00.Name = "btn00"
         Me.btn00.Size = New System.Drawing.Size(171, 157)
         Me.btn00.TabIndex = 0
+        Me.btn00.Tag = "0"
+        Me.btn00.Text = "0"
+        Me.btn00.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn00.UseVisualStyleBackColor = False
         '
         'btn01
@@ -58,10 +62,14 @@ Partial Class UC_Gamescreen
         Me.btn01.FlatAppearance.BorderSize = 2
         Me.btn01.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn01.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn01.Location = New System.Drawing.Point(191, 56)
         Me.btn01.Name = "btn01"
         Me.btn01.Size = New System.Drawing.Size(171, 157)
         Me.btn01.TabIndex = 0
+        Me.btn01.Tag = "0"
+        Me.btn01.Text = "1"
+        Me.btn01.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn01.UseVisualStyleBackColor = False
         '
         'btn02
@@ -73,10 +81,14 @@ Partial Class UC_Gamescreen
         Me.btn02.FlatAppearance.BorderSize = 2
         Me.btn02.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn02.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn02.Location = New System.Drawing.Point(368, 56)
         Me.btn02.Name = "btn02"
         Me.btn02.Size = New System.Drawing.Size(171, 157)
         Me.btn02.TabIndex = 0
+        Me.btn02.Tag = "0"
+        Me.btn02.Text = "2"
+        Me.btn02.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn02.UseVisualStyleBackColor = False
         '
         'btn10
@@ -88,10 +100,14 @@ Partial Class UC_Gamescreen
         Me.btn10.FlatAppearance.BorderSize = 2
         Me.btn10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn10.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn10.Location = New System.Drawing.Point(14, 219)
         Me.btn10.Name = "btn10"
         Me.btn10.Size = New System.Drawing.Size(171, 157)
         Me.btn10.TabIndex = 0
+        Me.btn10.Tag = "1"
+        Me.btn10.Text = "0"
+        Me.btn10.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn10.UseVisualStyleBackColor = False
         '
         'btn11
@@ -103,10 +119,14 @@ Partial Class UC_Gamescreen
         Me.btn11.FlatAppearance.BorderSize = 2
         Me.btn11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn11.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn11.Location = New System.Drawing.Point(191, 219)
         Me.btn11.Name = "btn11"
         Me.btn11.Size = New System.Drawing.Size(171, 157)
         Me.btn11.TabIndex = 0
+        Me.btn11.Tag = "1"
+        Me.btn11.Text = "1"
+        Me.btn11.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn11.UseVisualStyleBackColor = False
         '
         'btn12
@@ -118,10 +138,14 @@ Partial Class UC_Gamescreen
         Me.btn12.FlatAppearance.BorderSize = 2
         Me.btn12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn12.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn12.Location = New System.Drawing.Point(368, 219)
         Me.btn12.Name = "btn12"
         Me.btn12.Size = New System.Drawing.Size(171, 157)
         Me.btn12.TabIndex = 0
+        Me.btn12.Tag = "1"
+        Me.btn12.Text = "2"
+        Me.btn12.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn12.UseVisualStyleBackColor = False
         '
         'btn20
@@ -133,10 +157,14 @@ Partial Class UC_Gamescreen
         Me.btn20.FlatAppearance.BorderSize = 2
         Me.btn20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn20.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn20.Location = New System.Drawing.Point(14, 382)
         Me.btn20.Name = "btn20"
         Me.btn20.Size = New System.Drawing.Size(171, 157)
         Me.btn20.TabIndex = 0
+        Me.btn20.Tag = "2"
+        Me.btn20.Text = "0"
+        Me.btn20.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn20.UseVisualStyleBackColor = False
         '
         'btn21
@@ -148,10 +176,14 @@ Partial Class UC_Gamescreen
         Me.btn21.FlatAppearance.BorderSize = 2
         Me.btn21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn21.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn21.Location = New System.Drawing.Point(191, 382)
         Me.btn21.Name = "btn21"
         Me.btn21.Size = New System.Drawing.Size(171, 157)
         Me.btn21.TabIndex = 0
+        Me.btn21.Tag = "2"
+        Me.btn21.Text = "1"
+        Me.btn21.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn21.UseVisualStyleBackColor = False
         '
         'btn22
@@ -163,10 +195,14 @@ Partial Class UC_Gamescreen
         Me.btn22.FlatAppearance.BorderSize = 2
         Me.btn22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn22.Font = New System.Drawing.Font("Vladimir Script", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn22.Location = New System.Drawing.Point(368, 382)
         Me.btn22.Name = "btn22"
         Me.btn22.Size = New System.Drawing.Size(171, 157)
         Me.btn22.TabIndex = 0
+        Me.btn22.Tag = "2"
+        Me.btn22.Text = "2"
+        Me.btn22.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.btn22.UseVisualStyleBackColor = False
         '
         'lblGamescreenHeader
