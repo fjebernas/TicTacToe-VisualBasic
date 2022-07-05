@@ -21,8 +21,6 @@ Public Class Gameboard
         For i As Byte = 0 To _squareMatrix.GetLength(0) - 1
             For j As Byte = 0 To _squareMatrix.GetLength(1) - 1
                 _squareMatrix(i, j) = New Square(btnArray(i, j))
-                '_squareMatrix(i, j) = New Square(New Button)
-                'MessageBox.Show("i is: " & i & vbCrLf & "j is: " & j)
             Next
         Next
 

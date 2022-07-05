@@ -2,7 +2,7 @@
     Dim gameboard As Object
     Private _btnArray(,) As Button
 
-    Public Sub New()
+    Public Sub New(ByVal gameMode As Boolean)
         ' This call is required by the designer.
         InitializeComponent()
 
@@ -14,7 +14,7 @@
         }
 
         'gameboard = New Gameboard(lblGamescreenHeader)
-        gameboard = New Gameboard(_btnArray, True)
+        gameboard = New Gameboard(_btnArray, gameMode)
     End Sub
 
 #Region "First Row"

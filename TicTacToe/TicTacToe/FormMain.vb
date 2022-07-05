@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub btnGamescreen_Click(sender As Object, e As EventArgs) Handles btnGamescreen.Click
-        Toolbox.CreateInstance(New UC_Gamescreen, Me)
+        Toolbox.CreateInstance(New UC_Gamescreen(UC_Welcomescreen.gameMode), Me)
     End Sub
 
     Private Sub btnStatisticsscreen_Click(sender As Object, e As EventArgs) Handles btnStatisticsscreen.Click

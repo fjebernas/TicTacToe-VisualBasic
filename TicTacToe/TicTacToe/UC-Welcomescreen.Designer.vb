@@ -27,6 +27,9 @@ Partial Class UC_Welcomescreen
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnStatistics = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.chkBxCPUMode = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblWelcomeheader
@@ -96,10 +99,48 @@ Partial Class UC_Welcomescreen
         Me.btnQuit.Text = "Quit Game"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
+        'chkBxCPUMode
+        '
+        Me.chkBxCPUMode.AutoSize = True
+        Me.chkBxCPUMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.chkBxCPUMode.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBxCPUMode.ForeColor = System.Drawing.Color.OrangeRed
+        Me.chkBxCPUMode.Location = New System.Drawing.Point(411, 42)
+        Me.chkBxCPUMode.Name = "chkBxCPUMode"
+        Me.chkBxCPUMode.Size = New System.Drawing.Size(124, 23)
+        Me.chkBxCPUMode.TabIndex = 2
+        Me.chkBxCPUMode.Text = "Against CPU"
+        Me.chkBxCPUMode.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.LightCoral
+        Me.Label1.Location = New System.Drawing.Point(428, 77)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(90, 19)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "(1P Mode)"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Yellow
+        Me.Label2.Location = New System.Drawing.Point(407, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 19)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "NEW!!!"
+        '
         'UC_Welcomescreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.chkBxCPUMode)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnStatistics)
         Me.Controls.Add(Me.btnPlay)
@@ -117,4 +158,7 @@ Partial Class UC_Welcomescreen
     Friend WithEvents btnPlay As Button
     Friend WithEvents btnStatistics As Button
     Friend WithEvents btnQuit As Button
+    Friend WithEvents chkBxCPUMode As CheckBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
