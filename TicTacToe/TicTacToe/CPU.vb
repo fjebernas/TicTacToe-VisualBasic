@@ -131,7 +131,6 @@ Public Class CPU
     Public Function CheckIfWin(ByRef isGameOver As Boolean) As Boolean
         If CheckRowsForWin() Or CheckColsForWin() Or CheckDiagsForWin() Then
             isGameOver = True
-            MessageBox.Show(_playerSign + " has won!")
             Return True
         End If
         Return False

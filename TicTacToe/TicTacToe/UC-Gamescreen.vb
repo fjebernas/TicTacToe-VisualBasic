@@ -14,7 +14,7 @@
         }
 
         'gameboard = New Gameboard(lblGamescreenHeader)
-        gameboard = New Gameboard(_btnArray, gameMode)
+        gameboard = New Gameboard(_btnArray, gameMode, lblGamescreenHeader)
     End Sub
 
     Private Sub btnSquare_Click(sender As Object, e As EventArgs) Handles btn00.Click, btn22.Click, btn21.Click, btn20.Click, btn12.Click, btn11.Click, btn10.Click, btn02.Click, btn01.Click
