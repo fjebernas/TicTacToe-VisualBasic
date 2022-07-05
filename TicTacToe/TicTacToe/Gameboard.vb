@@ -44,15 +44,20 @@ Public Class Gameboard
             If Not (_isBattlingCPU) Then
                 If _isXTurn Then
                     _playerX.PutMark(_squareMatrix(row, col))
-                    _playerX.CheckIfWin(_isGameOver)
+                    If _playerX.CheckIfWin(_isGameOver) Then
+                        UC_Statisticsscreen.scoreX += 1
+                    End If
                 Else
                     _playerO.PutMark(_squareMatrix(row, col))
-                    _playerO.CheckIfWin(_isGameOver)
+                    If _playerO.CheckIfWin(_isGameOver) Then
+                        UC_Statisticsscreen.scoreO += 1
+                    End If
                 End If
 
                 'check if draw
                 If _playerX.MoveCount + _playerO.MoveCount = 9 Then
                     _isGameOver = True
+                    UC_Statisticsscreen.scoreDraws += 1
                 End If
                 HeaderUpdate()
                 _isXTurn = Not (_isXTurn)
@@ -61,12 +66,14 @@ Public Class Gameboard
                 _playerX.PutMark(_squareMatrix(row, col))
                 If _playerX.CheckIfWin(_isGameOver) Then
                     HeaderUpdate()
+                    UC_Statisticsscreen.scoreX += 1
                 End If
 
                 'check if draw *needs refactoring
                 If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
                     _isGameOver = True
                     HeaderUpdate()
+                    UC_Statisticsscreen.scoreDraws += 1
                 End If
 
                 If Not (_isGameOver) Then
@@ -74,6 +81,7 @@ Public Class Gameboard
                     _playerO.PutMark()
                     If _playerO.CheckIfWin(_isGameOver) Then
                         HeaderUpdate()
+                        UC_Statisticsscreen.scoreO += 1
                     End If
                 End If
 
@@ -81,6 +89,7 @@ Public Class Gameboard
                 If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
                     _isGameOver = True
                     HeaderUpdate()
+                    UC_Statisticsscreen.scoreDraws += 1
                 End If
             End If
         End If
