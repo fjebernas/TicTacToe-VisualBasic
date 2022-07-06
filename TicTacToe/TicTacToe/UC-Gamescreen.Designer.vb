@@ -210,7 +210,7 @@ Partial Class UC_Gamescreen
         Me.lblGamescreenHeader.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblGamescreenHeader.AutoSize = True
         Me.lblGamescreenHeader.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGamescreenHeader.ForeColor = System.Drawing.Color.Red
+        Me.lblGamescreenHeader.ForeColor = System.Drawing.Color.Lime
         Me.lblGamescreenHeader.Location = New System.Drawing.Point(194, 15)
         Me.lblGamescreenHeader.Name = "lblGamescreenHeader"
         Me.lblGamescreenHeader.Size = New System.Drawing.Size(168, 28)

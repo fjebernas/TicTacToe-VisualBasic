@@ -8,11 +8,20 @@
 
         ' Add any initialization after the InitializeComponent() call.
         mainForm = passedForm
-        chkBxCPUMode.Appearance = Appearance.Button
-        gameMode = False
+        gameMode = True
     End Sub
 
-    Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
+    Private Sub btnPlay1P_Click(sender As Object, e As EventArgs) Handles btnPlay1P.Click
+        gameMode = True
+        Toolbox.CreateInstance(New UC_Gamescreen(gameMode), mainForm)
+    End Sub
+
+    Private Sub btnPlay2P_Click(sender As Object, e As EventArgs) Handles btnPlay2P.Click
+        gameMode = False
+        Toolbox.CreateInstance(New UC_Gamescreen(gameMode), mainForm)
+    End Sub
+
+    Private Sub btnPlay_Click(sender As Object, e As EventArgs)
         Toolbox.CreateInstance(New UC_Gamescreen(gameMode), mainForm)
     End Sub
 
@@ -22,17 +31,5 @@
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         mainForm.Close()
-    End Sub
-
-    Private Sub chkBxCPUMode_CheckedChanged(sender As Object, e As EventArgs) Handles chkBxCPUMode.CheckedChanged
-        If chkBxCPUMode.Checked Then
-            gameMode = True
-            chkBxCPUMode.BackColor = Color.OrangeRed
-            chkBxCPUMode.ForeColor = Color.Black
-        Else
-            gameMode = False
-            chkBxCPUMode.BackColor = Color.Black
-            chkBxCPUMode.ForeColor = Color.OrangeRed
-        End If
     End Sub
 End Class

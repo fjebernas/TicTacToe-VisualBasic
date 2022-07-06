@@ -22,6 +22,7 @@ Partial Class FormMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMain))
         Me.btnWelcomescreen = New System.Windows.Forms.Button()
         Me.btnGamescreen = New System.Windows.Forms.Button()
         Me.btnStatisticsscreen = New System.Windows.Forms.Button()
@@ -91,6 +92,7 @@ Partial Class FormMain
         Me.Controls.Add(Me.btnGamescreen)
         Me.Controls.Add(Me.btnWelcomescreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
