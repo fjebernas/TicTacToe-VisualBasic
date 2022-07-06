@@ -57,7 +57,7 @@ Public Class Gameboard
                 'check if draw
                 If _playerX.MoveCount + _playerO.MoveCount = 9 Then
                     _isGameOver = True
-                    UC_Statisticsscreen.scoreDraws += 1
+                    UC_Statisticsscreen.scoreDraws2P += 1
                 End If
                 HeaderUpdate()
                 _isXTurn = Not (_isXTurn)
@@ -66,14 +66,14 @@ Public Class Gameboard
                 _playerX.PutMark(_squareMatrix(row, col))
                 If _playerX.CheckIfWin(_isGameOver) Then
                     HeaderUpdate()
-                    UC_Statisticsscreen.scoreX += 1
+                    UC_Statisticsscreen.scoreYou += 1
                 End If
 
                 'check if draw *needs refactoring
                 If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
                     _isGameOver = True
                     HeaderUpdate()
-                    UC_Statisticsscreen.scoreDraws += 1
+                    UC_Statisticsscreen.scoreDraws2P += 1
                 End If
 
                 If Not (_isGameOver) Then
@@ -81,7 +81,7 @@ Public Class Gameboard
                     _playerO.PutMark()
                     If _playerO.CheckIfWin(_isGameOver) Then
                         HeaderUpdate()
-                        UC_Statisticsscreen.scoreO += 1
+                        UC_Statisticsscreen.scoreCPU += 1
                     End If
                 End If
 
@@ -89,7 +89,7 @@ Public Class Gameboard
                 If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
                     _isGameOver = True
                     HeaderUpdate()
-                    UC_Statisticsscreen.scoreDraws += 1
+                    UC_Statisticsscreen.scoreDraws2P += 1
                 End If
             End If
         End If
