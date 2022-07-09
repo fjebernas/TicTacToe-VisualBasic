@@ -5,6 +5,8 @@ Public Class CPU
     Private _moveCount As Byte
     Dim _tempTargetSquare As Square
 
+    Public WinningSquares(2) As Square
+
     Public Sub New(ByVal playerSign As Char, ByVal squareMatrix(,) As Square)
         _playerSign = playerSign
         _squareMatrix = squareMatrix
@@ -163,6 +165,9 @@ Public Class CPU
 
     Private Function CheckRowColDiag(ByVal sq1 As Square, ByVal sq2 As Square, ByVal sq3 As Square) As Boolean
         If Not (sq1.GetState() = " ") And sq1.GetState() = sq2.GetState() And sq2.GetState() = sq3.GetState() Then
+            WinningSquares(0) = sq1
+            WinningSquares(1) = sq2
+            WinningSquares(2) = sq3
             Return True
         End If
         Return False

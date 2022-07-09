@@ -25,4 +25,8 @@ Public Class Square
     Public Function GetState() As Char
         Return _state
     End Function
+
+    Public Sub LightUp()
+        _btn.BackColor = Color.Orange
+    End Sub
 End Class

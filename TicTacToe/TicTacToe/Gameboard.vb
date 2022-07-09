@@ -11,7 +11,6 @@ Public Class Gameboard
 
     Private _playerX As Player
     Private _playerO As Object
-    'Private _smartCPU As CPU
     Private _isBattlingCPU As Boolean
 
     Private _header As Label
@@ -41,16 +40,22 @@ Public Class Gameboard
 
     Public Sub SquareUpdate(ByVal row As Byte, ByVal col As Byte)
         If Not (_isGameOver) Then
-            If Not (_isBattlingCPU) Then
+            If Not (_isBattlingCPU) Then ' 2P mode
                 If _isXTurn Then
                     _playerX.PutMark(_squareMatrix(row, col))
                     If _playerX.CheckIfWin(_isGameOver) Then
                         UC_Statisticsscreen.scoreX += 1
+                        For Each square As Square In _playerX.WinningSquares
+                            square.LightUp()
+                        Next
                     End If
                 Else
                     _playerO.PutMark(_squareMatrix(row, col))
                     If _playerO.CheckIfWin(_isGameOver) Then
                         UC_Statisticsscreen.scoreO += 1
+                        For Each square As Square In _playerO.WinningSquares
+                            square.LightUp()
+                        Next
                     End If
                 End If
 
@@ -61,11 +66,14 @@ Public Class Gameboard
                 End If
                 HeaderUpdate()
                 _isXTurn = Not (_isXTurn)
-            Else
+            Else ' 1P mode
                 _isXTurn = True
                 _playerX.PutMark(_squareMatrix(row, col))
                 If _playerX.CheckIfWin(_isGameOver) Then
                     HeaderUpdate()
+                    For Each square As Square In _playerX.WinningSquares
+                        square.LightUp()
+                    Next
                     UC_Statisticsscreen.scoreYou += 1
                 End If
 
@@ -81,6 +89,9 @@ Public Class Gameboard
                     _playerO.PutMark()
                     If _playerO.CheckIfWin(_isGameOver) Then
                         HeaderUpdate()
+                        For Each square As Square In _playerO.WinningSquares
+                            square.LightUp()
+                        Next
                         UC_Statisticsscreen.scoreCPU += 1
                     End If
                 End If
