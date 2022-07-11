@@ -4,6 +4,8 @@
 '   players can put X and O on those squares
 '   it also has a header
 '   and that header tells whose turn it is, and announces the winner
+Imports System.Media
+
 Public Class Gameboard
     Private _isGameOver As Boolean
     Private _isXTurn As Boolean
@@ -12,6 +14,9 @@ Public Class Gameboard
     Private _playerX As Player
     Private _playerO As Object
     Private _isBattlingCPU As Boolean
+
+    Private ReadOnly _soundWin As SoundPlayer = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundWin.wav")
+    Private ReadOnly _soundDraw As SoundPlayer = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundDraw.wav")
 
     Private _header As Label
 
@@ -38,13 +43,14 @@ Public Class Gameboard
         End If
     End Sub
 
-    Public Sub SquareUpdate(ByVal row As Byte, ByVal col As Byte)
+    Public Async Sub SquareUpdate(ByVal row As Byte, ByVal col As Byte)
         If Not (_isGameOver) Then
             If Not (_isBattlingCPU) Then ' 2P mode
                 If _isXTurn Then
                     _playerX.PutMark(_squareMatrix(row, col))
                     If _playerX.CheckIfWin(_isGameOver) Then
                         UC_Statisticsscreen.scoreX += 1
+                        _soundWin.Play()
                         For Each square As Square In _playerX.WinningSquares
                             square.LightUp()
                         Next
@@ -53,6 +59,7 @@ Public Class Gameboard
                     _playerO.PutMark(_squareMatrix(row, col))
                     If _playerO.CheckIfWin(_isGameOver) Then
                         UC_Statisticsscreen.scoreO += 1
+                        _soundWin.Play()
                         For Each square As Square In _playerO.WinningSquares
                             square.LightUp()
                         Next
@@ -63,6 +70,7 @@ Public Class Gameboard
                 If _playerX.MoveCount + _playerO.MoveCount = 9 Then
                     _isGameOver = True
                     UC_Statisticsscreen.scoreDraws2P += 1
+                    _soundDraw.Play()
                 End If
                 HeaderUpdate()
                 _isXTurn = Not (_isXTurn)
@@ -75,6 +83,7 @@ Public Class Gameboard
                         square.LightUp()
                     Next
                     UC_Statisticsscreen.scoreYou += 1
+                    _soundWin.Play()
                 End If
 
                 'check if draw *needs refactoring
@@ -82,10 +91,12 @@ Public Class Gameboard
                     _isGameOver = True
                     HeaderUpdate()
                     UC_Statisticsscreen.scoreDraws2P += 1
+                    _soundDraw.Play()
                 End If
 
                 If Not (_isGameOver) Then
                     _isXTurn = False
+                    Await Task.Delay(500)
                     _playerO.PutMark()
                     If _playerO.CheckIfWin(_isGameOver) Then
                         HeaderUpdate()
@@ -93,6 +104,7 @@ Public Class Gameboard
                             square.LightUp()
                         Next
                         UC_Statisticsscreen.scoreCPU += 1
+                        _soundWin.Play()
                     End If
                 End If
 
@@ -101,6 +113,7 @@ Public Class Gameboard
                     _isGameOver = True
                     HeaderUpdate()
                     UC_Statisticsscreen.scoreDraws2P += 1
+                    _soundDraw.Play()
                 End If
             End If
         End If
