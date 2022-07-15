@@ -109,7 +109,7 @@ Public Class Gameboard
                 If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
                     _isGameOver = True
                     HeaderUpdate()
-                    UC_Statisticsscreen.scoreDraws2P += 1
+                    UC_Statisticsscreen.scoreDraws1P += 1
                     _soundDraw.Play()
                 End If
             End If
