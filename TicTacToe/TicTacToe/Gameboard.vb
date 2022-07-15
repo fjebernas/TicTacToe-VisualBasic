@@ -1,9 +1,4 @@
-﻿'Gameboard class acts as a
-'   literal gameboard
-'   where it is made up of 3 x 3 squares
-'   players can put X and O on those squares
-'   it also has a header
-'   and that header tells whose turn it is, and announces the winner
+﻿
 Imports System.Media
 
 Public Class Gameboard
@@ -95,6 +90,7 @@ Public Class Gameboard
                 End If
 
                 If Not (_isGameOver) Then
+                    ItsCPUsMove(True)
                     _isXTurn = False
                     Await Task.Delay(500)
                     _playerO.PutMark()
@@ -106,6 +102,7 @@ Public Class Gameboard
                         UC_Statisticsscreen.scoreCPU += 1
                         _soundWin.Play()
                     End If
+                    ItsCPUsMove(False)
                 End If
 
                 'check if draw *needs refactoring
@@ -158,5 +155,18 @@ Public Class Gameboard
                 _header.ForeColor = Color.Yellow
             End If
         End While
+    End Sub
+
+    'prevent player from making a move While waiting For cpu To place a mark
+    Private Sub ItsCPUsMove(ByVal yes As Boolean)
+        If yes Then
+            For Each square As Square In _squareMatrix
+                square.Disable()
+            Next
+        Else
+            For Each square As Square In _squareMatrix
+                square.Enable()
+            Next
+        End If
     End Sub
 End Class

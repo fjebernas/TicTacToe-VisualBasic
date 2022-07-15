@@ -1,5 +1,4 @@
-﻿'Square class represents a single square in the 3x3 tictactoe Gameboard
-'   can be marked as either X or O
+﻿
 Imports System.Media
 
 Public Class Square
@@ -34,5 +33,17 @@ Public Class Square
 
     Public Sub LightUp()
         _btn.BackColor = Color.Orange
+    End Sub
+
+    Public Sub Disable()
+        If _state = " " Then
+            _btn.Enabled = False
+        End If
+    End Sub
+
+    Public Sub Enable()
+        If _state = " " Then
+            _btn.Enabled = True
+        End If
     End Sub
 End Class
