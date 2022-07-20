@@ -97,6 +97,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MyMedia.vb" />
     <Compile Include="Player.vb" />
     <Compile Include="Square.vb" />
     <Compile Include="Toolbox.vb" />
