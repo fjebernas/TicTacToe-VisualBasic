@@ -21,6 +21,10 @@ Module MyMedia
             sound = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundX.wav")
         ElseIf symbol = "o" Then
             sound = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundO.wav")
+        ElseIf symbol = "w" Then
+            sound = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundWin.wav")
+        ElseIf symbol = "d" Then
+            sound = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundDraw.wav")
         Else
             sound = Nothing
         End If

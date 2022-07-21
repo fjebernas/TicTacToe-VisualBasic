@@ -10,9 +10,6 @@ Public Class Gameboard
     Private _playerO As Object
     Private _isBattlingCPU As Boolean
 
-    Private ReadOnly _soundWin As SoundPlayer = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundWin.wav")
-    Private ReadOnly _soundDraw As SoundPlayer = New SoundPlayer("C:\Users\franc\Documents\School\ELECTIVE 3\repos\TicTacToe-folder\TicTacToe\TicTacToe\assets\soundDraw.wav")
-
     Private _header As Label
 
     Public Sub New(ByVal btnArray(,) As Button, ByVal isBattlingCPU As Boolean, ByVal lblGamescreen As Label)
@@ -43,31 +40,17 @@ Public Class Gameboard
             If Not (_isBattlingCPU) Then ' 2P mode
                 If _isXTurn Then
                     _playerX.PutMark(_squareMatrix(row, col))
-                    If _playerX.CheckIfWin(_isGameOver) Then
-                        UC_Statisticsscreen.scoreX += 1
-                        _soundWin.Play()
-                        For Each square As Square In _playerX.WinningSquares
-                            square.LightUp()
-                        Next
-                    End If
+                    CheckWin(_playerX)
                 Else
                     _playerO.PutMark(_squareMatrix(row, col))
-                    If _playerO.CheckIfWin(_isGameOver) Then
-                        UC_Statisticsscreen.scoreO += 1
-                        _soundWin.Play()
-                        For Each square As Square In _playerO.WinningSquares
-                            square.LightUp()
-                        Next
-                    End If
+                    CheckWin(_playerO)
                 End If
 
                 'check if draw
-                If _playerX.MoveCount + _playerO.MoveCount = 9 Then
-                    _isGameOver = True
-                    UC_Statisticsscreen.scoreDraws2P += 1
-                    _soundDraw.Play()
-                End If
+                CheckDraw(_playerX, _playerO)
                 HeaderUpdate()
+
+                'if game is not yet finished,
                 _isXTurn = Not (_isXTurn)
             Else ' 1P mode
                 _isXTurn = True
@@ -78,7 +61,7 @@ Public Class Gameboard
                         square.LightUp()
                     Next
                     UC_Statisticsscreen.scoreYou += 1
-                    _soundWin.Play()
+                    MyMedia.GetSound("w").Play()
                 End If
 
                 'check if draw *needs refactoring
@@ -86,7 +69,7 @@ Public Class Gameboard
                     _isGameOver = True
                     HeaderUpdate()
                     UC_Statisticsscreen.scoreDraws2P += 1
-                    _soundDraw.Play()
+                    MyMedia.GetSound("d").Play()
                 End If
 
                 If Not (_isGameOver) Then
@@ -100,7 +83,7 @@ Public Class Gameboard
                             square.LightUp()
                         Next
                         UC_Statisticsscreen.scoreCPU += 1
-                        _soundWin.Play()
+                        MyMedia.GetSound("w").Play()
                     End If
                     ItsCPUsMove(False)
                 End If
@@ -110,9 +93,27 @@ Public Class Gameboard
                     _isGameOver = True
                     HeaderUpdate()
                     UC_Statisticsscreen.scoreDraws1P += 1
-                    _soundDraw.Play()
+                    MyMedia.GetSound("d").Play()
                 End If
             End If
+        End If
+    End Sub
+
+    Private Sub CheckWin(ByVal player As Player)
+        If player.CheckIfWin(_isGameOver) Then
+            UC_Statisticsscreen.AddScore(player.GetSign())
+            MyMedia.GetSound("w").Play()
+            For Each square As Square In player.WinningSquares
+                square.LightUp()
+            Next
+        End If
+    End Sub
+
+    Private Sub CheckDraw(ByVal player1 As Player, ByVal player2 As Player)
+        If player1.MoveCount + player2.MoveCount = 9 Then
+            _isGameOver = True
+            UC_Statisticsscreen.AddScore("d")
+            MyMedia.GetSound("d").Play()
         End If
     End Sub
 

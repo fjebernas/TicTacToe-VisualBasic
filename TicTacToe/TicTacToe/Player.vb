@@ -12,6 +12,10 @@ Public Class Player
         _moveCount = 0
     End Sub
 
+    Public Function GetSign() As Char
+        Return _playerSign
+    End Function
+
     Public Property MoveCount() As Byte
         Get
             Return _moveCount
