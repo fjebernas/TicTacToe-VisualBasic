@@ -37,71 +37,53 @@ Public Class Gameboard
 
     Public Async Sub SquareUpdate(ByVal row As Byte, ByVal col As Byte)
         If Not (_isGameOver) Then
-            If Not (_isBattlingCPU) Then ' 2P mode
+            If Not (_isBattlingCPU) Then
+                '2P mode
                 If _isXTurn Then
                     _playerX.PutMark(_squareMatrix(row, col))
-                    CheckWin(_playerX)
+                    CheckWin(_playerX, True)
                 Else
                     _playerO.PutMark(_squareMatrix(row, col))
-                    CheckWin(_playerO)
+                    CheckWin(_playerO, True)
                 End If
 
                 'check if draw
-                CheckDraw(_playerX, _playerO)
+                CheckDraw(_playerX, _playerO, True)
                 HeaderUpdate()
 
                 'if game is not yet finished,
                 _isXTurn = Not (_isXTurn)
-            Else ' 1P mode
-                _isXTurn = True
-                _playerX.PutMark(_squareMatrix(row, col))
-                If _playerX.CheckIfWin(_isGameOver) Then
-                    HeaderUpdate()
-                    For Each square As Square In _playerX.WinningSquares
-                        square.LightUp()
-                    Next
-                    UC_Statisticsscreen.scoreYou += 1
-                    MyMedia.GetSound("w").Play()
-                End If
-
-                'check if draw *needs refactoring
-                If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
-                    _isGameOver = True
-                    HeaderUpdate()
-                    UC_Statisticsscreen.scoreDraws2P += 1
-                    MyMedia.GetSound("d").Play()
-                End If
-
-                If Not (_isGameOver) Then
-                    ItsCPUsMove(True)
-                    _isXTurn = False
-                    Await Task.Delay(500)
+            Else
+                '1P mode
+                If _isXTurn Then
+                    _playerX.PutMark(_squareMatrix(row, col))
+                    CheckWin(_playerX, False)
+                Else
                     _playerO.PutMark()
-                    If _playerO.CheckIfWin(_isGameOver) Then
-                        HeaderUpdate()
-                        For Each square As Square In _playerO.WinningSquares
-                            square.LightUp()
-                        Next
-                        UC_Statisticsscreen.scoreCPU += 1
-                        MyMedia.GetSound("w").Play()
-                    End If
-                    ItsCPUsMove(False)
+                    CheckWin(_playerO, False)
                 End If
 
-                'check if draw *needs refactoring
-                If _playerX.MoveCount + _playerO.MoveCount = 9 And Not (_isGameOver) Then
-                    _isGameOver = True
-                    HeaderUpdate()
-                    UC_Statisticsscreen.scoreDraws1P += 1
-                    MyMedia.GetSound("d").Play()
+                'check if draw
+                CheckDraw(_playerX, _playerO, False)
+                HeaderUpdate()
+
+                'if game is not yet finished,
+                _isXTurn = Not (_isXTurn)
+
+                If Not (_isGameOver) And Not (_isXTurn) Then
+                    'delay for cpu to make move
+                    ItsCPUsMove(True)
+                    Await Task.Delay(500)
+                    SquareUpdate(Nothing, Nothing)
+                    ItsCPUsMove(False)
                 End If
             End If
         End If
     End Sub
 
-    Private Sub CheckWin(ByVal player As Player)
+    Private Sub CheckWin(ByVal player As Object, ByVal is2P As Boolean)
         If player.CheckIfWin(_isGameOver) Then
-            UC_Statisticsscreen.AddScore(player.GetSign())
+            UC_Statisticsscreen.AddScore(player.GetSign(), is2P)
             MyMedia.GetSound("w").Play()
             For Each square As Square In player.WinningSquares
                 square.LightUp()
@@ -109,10 +91,10 @@ Public Class Gameboard
         End If
     End Sub
 
-    Private Sub CheckDraw(ByVal player1 As Player, ByVal player2 As Player)
+    Private Sub CheckDraw(ByVal player1 As Object, ByVal player2 As Object, ByVal is2P As Boolean)
         If player1.MoveCount + player2.MoveCount = 9 Then
             _isGameOver = True
-            UC_Statisticsscreen.AddScore("d")
+            UC_Statisticsscreen.AddScore("d", is2P)
             MyMedia.GetSound("d").Play()
         End If
     End Sub

@@ -24,13 +24,23 @@
         lblScoreDraws2P.Text = scoreDraws2P
     End Sub
 
-    Public Shared Sub AddScore(ByVal playerSign As Char)
-        If playerSign = "x" Then
-            scoreX += 1
-        ElseIf playerSign = "o" Then
-            scoreO += 1
-        ElseIf playerSign = "d" Then
-            scoreDraws2P += 1
+    Public Shared Sub AddScore(ByVal playerSign As Char, ByVal is2P As Boolean)
+        If is2P Then
+            If playerSign = "x" Then
+                scoreX += 1
+            ElseIf playerSign = "o" Then
+                scoreO += 1
+            ElseIf playerSign = "d" Then
+                scoreDraws2P += 1
+            End If
+        Else
+            If playerSign = "x" Then
+                scoreYou += 1
+            ElseIf playerSign = "o" Then
+                scoreCPU += 1
+            ElseIf playerSign = "d" Then
+                scoreDraws1P += 1
+            End If
         End If
     End Sub
 End Class

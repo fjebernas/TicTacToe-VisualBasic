@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UC_Welcomescreen
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,14 @@ Partial Class UC_Welcomescreen
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_Welcomescreen))
         Me.lblWelcomeheader = New System.Windows.Forms.Label()
         Me.lblWelcomesubheader = New System.Windows.Forms.Label()
         Me.btnPlay2P = New System.Windows.Forms.Button()
         Me.btnStatistics = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnPlay1P = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblWelcomeheader
@@ -115,20 +112,10 @@ Partial Class UC_Welcomescreen
         Me.btnPlay1P.Text = "1 Player"
         Me.btnPlay1P.UseVisualStyleBackColor = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(161, 308)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(33, 34)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
         'UC_Welcomescreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnStatistics)
         Me.Controls.Add(Me.btnPlay1P)
@@ -137,7 +124,6 @@ Partial Class UC_Welcomescreen
         Me.Controls.Add(Me.lblWelcomeheader)
         Me.Name = "UC_Welcomescreen"
         Me.Size = New System.Drawing.Size(555, 555)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,5 +135,4 @@ Partial Class UC_Welcomescreen
     Friend WithEvents btnStatistics As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnPlay1P As Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class
