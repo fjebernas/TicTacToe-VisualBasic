@@ -13,7 +13,6 @@
             {btn20, btn21, btn22}
         }
 
-        'gameboard = New Gameboard(lblGamescreenHeader)
         gameboard = New Gameboard(_btnArray, gameMode, lblGamescreenHeader)
     End Sub
 

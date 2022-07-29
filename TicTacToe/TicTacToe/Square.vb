@@ -1,6 +1,4 @@
 ﻿
-Imports System.Media
-
 Public Class Square
     Private _btn As Button
     Private _state As Char

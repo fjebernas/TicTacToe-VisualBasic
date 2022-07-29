@@ -1,8 +1,8 @@
-﻿
-Public Class Player
-    Private _playerSign As Char
-    Private _squareMatrix(,) As Square
-    Private _moveCount As Byte
+﻿Public MustInherit Class Player
+
+    Protected _playerSign As Char
+    Protected _squareMatrix(,) As Square
+    Protected _moveCount As Byte
 
     Public WinningSquares(2) As Square
 
@@ -24,11 +24,6 @@ Public Class Player
             _moveCount = value
         End Set
     End Property
-
-    Public Sub PutMark(ByVal square As Square)
-        square.Trigger(_playerSign)
-        _moveCount += 1
-    End Sub
 
     Public Function CheckIfWin(ByRef isGameOver As Boolean) As Boolean
         If CheckRowsForWin() Or CheckColsForWin() Or CheckDiagsForWin() Then

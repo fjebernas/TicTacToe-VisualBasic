@@ -1,12 +1,10 @@
 ﻿
-Imports System.Media
-
 Public Class Gameboard
     Private _isGameOver As Boolean
     Private _isXTurn As Boolean
     Private _squareMatrix(2, 2) As Square
 
-    Private _playerX As Player
+    Private _playerX As Human
     Private _playerO As Object
     Private _isBattlingCPU As Boolean
 
@@ -23,10 +21,10 @@ Public Class Gameboard
             Next
         Next
 
-        _playerX = New Player("x", _squareMatrix)
+        _playerX = New Human("x", _squareMatrix)
         'check if 2P mode or CPU mode
         If Not (isBattlingCPU) Then
-            _playerO = New Player("o", _squareMatrix)
+            _playerO = New Human("o", _squareMatrix)
             _header.Text = "Your turn X!"
         Else
             _playerO = New CPU("o", _squareMatrix)
