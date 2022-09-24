@@ -12,7 +12,7 @@ Public Class Square
         _btn.Enabled = False
         _state = playerSign
         _btn.BackgroundImage = MyMedia.GetImage(playerSign)
-        MyMedia.GetSound(playerSign).Play()
+        'MyMedia.GetSound(playerSign).Play()
     End Sub
 
     Public Function GetState() As Char

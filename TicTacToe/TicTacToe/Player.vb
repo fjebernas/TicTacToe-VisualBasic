@@ -12,9 +12,17 @@
         _moveCount = 0
     End Sub
 
+    Public Overridable Sub PutMark()
+        'This method changes in its child classes
+    End Sub
+
     Public Function GetSign() As Char
         Return _playerSign
     End Function
+
+    Public Sub SetSign(ByVal sign As Char)
+        _playerSign = sign
+    End Sub
 
     Public Property MoveCount() As Byte
         Get

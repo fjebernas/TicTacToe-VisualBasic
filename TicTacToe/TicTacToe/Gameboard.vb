@@ -4,8 +4,8 @@ Public Class Gameboard
     Private _isXTurn As Boolean
     Private _squareMatrix(2, 2) As Square
 
-    Private _playerX As Human
-    Private _playerO As Object
+    Private _player1 As Human
+    Private _player2 As Object
     Private _isBattlingCPU As Boolean
 
     Private _header As Label
@@ -21,13 +21,13 @@ Public Class Gameboard
             Next
         Next
 
-        _playerX = New Human("x", _squareMatrix)
+        _player1 = New Human("x", _squareMatrix)
         'check if 2P mode or CPU mode
         If Not (isBattlingCPU) Then
-            _playerO = New Human("o", _squareMatrix)
+            _player2 = New Human("o", _squareMatrix)
             _header.Text = "Your turn X!"
         Else
-            _playerO = New CPU("o", _squareMatrix)
+            _player2 = New CPU("o", _squareMatrix)
             _isBattlingCPU = isBattlingCPU
             _header.Text = "Battling CPU..."
         End If
@@ -38,15 +38,15 @@ Public Class Gameboard
             If Not (_isBattlingCPU) Then
                 '2P mode
                 If _isXTurn Then
-                    _playerX.PutMark(_squareMatrix(row, col))
-                    CheckWin(_playerX, True)
+                    _player1.PutMark(_squareMatrix(row, col))
+                    CheckWin(_player1, True)
                 Else
-                    _playerO.PutMark(_squareMatrix(row, col))
-                    CheckWin(_playerO, True)
+                    _player2.PutMark(_squareMatrix(row, col))
+                    CheckWin(_player2, True)
                 End If
 
                 'check if draw
-                CheckDraw(_playerX, _playerO, True)
+                CheckDraw(_player1, _player2, True)
                 HeaderUpdate()
 
                 'if game is not yet finished,
@@ -54,15 +54,15 @@ Public Class Gameboard
             Else
                 '1P mode
                 If _isXTurn Then
-                    _playerX.PutMark(_squareMatrix(row, col))
-                    CheckWin(_playerX, False)
+                    _player1.PutMark(_squareMatrix(row, col))
+                    CheckWin(_player1, False)
                 Else
-                    _playerO.PutMark()
-                    CheckWin(_playerO, False)
+                    _player2.PutMark()
+                    CheckWin(_player2, False)
                 End If
 
                 'check if draw
-                CheckDraw(_playerX, _playerO, False)
+                CheckDraw(_player1, _player2, False)
                 HeaderUpdate()
 
                 'if game is not yet finished,
@@ -107,13 +107,13 @@ Public Class Gameboard
                 End If
             End If
         Else
-            If _isXTurn And Not (_playerX.MoveCount + _playerO.MoveCount = 9) Then
+            If _isXTurn And Not (_player1.MoveCount + _player2.MoveCount = 9) Then
                 If Not (_isBattlingCPU) Then
                     _header.Text = "   X WINS!"
                 ElseIf _isBattlingCPU Then
                     _header.Text = "   YOU WIN!"
                 End If
-            ElseIf Not (_isXTurn) And Not (_playerX.MoveCount + _playerO.MoveCount = 9) Then
+            ElseIf Not (_isXTurn) And Not (_player1.MoveCount + _player2.MoveCount = 9) Then
                 If Not (_isBattlingCPU) Then
                     _header.Text = "   O WINS!"
                 Else
